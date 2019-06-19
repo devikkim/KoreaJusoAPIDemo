@@ -19,7 +19,7 @@ class SearchAddressService: SearchAddressServiceType {
     failure: @escaping (Error) -> Void
   ){
     let parameters = [
-      "confmKey":"API-KEy",
+      "confmKey":"API-KEY",
       "currentPage":"\(pageIndex)",
       "countPerPage":"\(interval)",
       "keyword":"\(keyword)",

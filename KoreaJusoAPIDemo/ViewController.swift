@@ -21,7 +21,8 @@ class ViewController: UIViewController {
     navigationController?.navigationBar.prefersLargeTitles = true
   }
 
-  @IBAction func touchSearchButton(_ sender: UIButton) {    SearchAddressWireframe().openViewControllerWithNavigationWithDelegate(
+  @IBAction func touchSearchButton(_ sender: UIButton) {
+    SearchAddressWireframe().openViewControllerWithNavigationWithDelegate(
       delegate: self,
       source: self
     )
