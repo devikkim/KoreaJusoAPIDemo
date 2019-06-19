@@ -8,6 +8,11 @@ Search Korea Address using Ministry of the Interior and Safety's Address Open AP
 
 (```SearchAddress``` 모듈은 [```VIPER```](https://github.com/devikkim/ViperSample) 아키텍쳐를 사용하여 만들어졌습니다.)
 
+## demo.gif
+
+<img alt="Demo" src="/resources/demo.gif?raw=true" width="290">&nbsp;
+
+
 ## What you need
 
 a. Get an API Key from [Ministry of the Interior and Safety's Address Open API (행정안전부)](http://www.juso.go.kr/addrlink/main.do?cPath=99MM)
@@ -37,11 +42,6 @@ func fetchAddress(
     ...
 }
 ```
-
-## demo.gif
-
-<img alt="Demo" src="/resources/demo.gif?raw=true" width="290">&nbsp;
-
 
 ## sample code
 
