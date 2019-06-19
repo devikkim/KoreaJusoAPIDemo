@@ -1,0 +1,6 @@
+framework module Pods_KoreaJusoAPIDemoTests {
+  umbrella header "Pods-KoreaJusoAPIDemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

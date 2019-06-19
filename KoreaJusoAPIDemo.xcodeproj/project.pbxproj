@@ -13,6 +13,24 @@
 		73B5564E22B9C65B00B3676C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73B5564D22B9C65B00B3676C /* Assets.xcassets */; };
 		73B5565122B9C65B00B3676C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73B5564F22B9C65B00B3676C /* LaunchScreen.storyboard */; };
 		73B5565C22B9C65B00B3676C /* KoreaJusoAPIDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B5565B22B9C65B00B3676C /* KoreaJusoAPIDemoTests.swift */; };
+		73B5568122B9C67400B3676C /* SearchAddressModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B5566822B9C67400B3676C /* SearchAddressModuleInterface.swift */; };
+		73B5568222B9C67400B3676C /* JusoResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B5566B22B9C67400B3676C /* JusoResult.swift */; };
+		73B5568322B9C67400B3676C /* Juso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B5566C22B9C67400B3676C /* Juso.swift */; };
+		73B5568422B9C67400B3676C /* JusoCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B5566D22B9C67400B3676C /* JusoCommon.swift */; };
+		73B5568522B9C67400B3676C /* JusoContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B5566E22B9C67400B3676C /* JusoContainer.swift */; };
+		73B5568622B9C67400B3676C /* SearchAddressServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B5567022B9C67400B3676C /* SearchAddressServiceType.swift */; };
+		73B5568722B9C67400B3676C /* SearchAddressService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B5567122B9C67400B3676C /* SearchAddressService.swift */; };
+		73B5568822B9C67400B3676C /* SearchAddressInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B5567322B9C67400B3676C /* SearchAddressInteractorIO.swift */; };
+		73B5568922B9C67400B3676C /* SearchAddressInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B5567422B9C67400B3676C /* SearchAddressInteractor.swift */; };
+		73B5568A22B9C67400B3676C /* SearchAddressPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B5567722B9C67400B3676C /* SearchAddressPresenter.swift */; };
+		73B5568B22B9C67400B3676C /* SearchAddressWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B5567922B9C67400B3676C /* SearchAddressWireframe.swift */; };
+		73B5568C22B9C67400B3676C /* SearchAddressWireframeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B5567A22B9C67400B3676C /* SearchAddressWireframeInput.swift */; };
+		73B5568D22B9C67400B3676C /* SearchAddressViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B5567C22B9C67400B3676C /* SearchAddressViewInterface.swift */; };
+		73B5568E22B9C67400B3676C /* AddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B5567E22B9C67400B3676C /* AddressTableViewCell.swift */; };
+		73B5568F22B9C67400B3676C /* SearchAddress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73B5567F22B9C67400B3676C /* SearchAddress.storyboard */; };
+		73B5569022B9C67400B3676C /* SearchAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B5568022B9C67400B3676C /* SearchAddressViewController.swift */; };
+		C015CA732CD749CD5DFE5BE0 /* Pods_KoreaJusoAPIDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D4C1993B60A0060A5353C6 /* Pods_KoreaJusoAPIDemoTests.framework */; };
+		E0BB87DEA7D087DF2A006388 /* Pods_KoreaJusoAPIDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BB6AB55D1634A966310869 /* Pods_KoreaJusoAPIDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04BB6AB55D1634A966310869 /* Pods_KoreaJusoAPIDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KoreaJusoAPIDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		060429101DA5EA6B6FCD31E8 /* Pods-KoreaJusoAPIDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoreaJusoAPIDemoTests.release.xcconfig"; path = "Target Support Files/Pods-KoreaJusoAPIDemoTests/Pods-KoreaJusoAPIDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		73B5564322B9C65900B3676C /* KoreaJusoAPIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoreaJusoAPIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73B5564622B9C65900B3676C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73B5564822B9C65900B3676C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +56,26 @@
 		73B5565722B9C65B00B3676C /* KoreaJusoAPIDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KoreaJusoAPIDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73B5565B22B9C65B00B3676C /* KoreaJusoAPIDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreaJusoAPIDemoTests.swift; sourceTree = "<group>"; };
 		73B5565D22B9C65B00B3676C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73B5566822B9C67400B3676C /* SearchAddressModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchAddressModuleInterface.swift; sourceTree = "<group>"; };
+		73B5566B22B9C67400B3676C /* JusoResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JusoResult.swift; sourceTree = "<group>"; };
+		73B5566C22B9C67400B3676C /* Juso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Juso.swift; sourceTree = "<group>"; };
+		73B5566D22B9C67400B3676C /* JusoCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JusoCommon.swift; sourceTree = "<group>"; };
+		73B5566E22B9C67400B3676C /* JusoContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JusoContainer.swift; sourceTree = "<group>"; };
+		73B5567022B9C67400B3676C /* SearchAddressServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchAddressServiceType.swift; sourceTree = "<group>"; };
+		73B5567122B9C67400B3676C /* SearchAddressService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchAddressService.swift; sourceTree = "<group>"; };
+		73B5567322B9C67400B3676C /* SearchAddressInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchAddressInteractorIO.swift; sourceTree = "<group>"; };
+		73B5567422B9C67400B3676C /* SearchAddressInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchAddressInteractor.swift; sourceTree = "<group>"; };
+		73B5567722B9C67400B3676C /* SearchAddressPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchAddressPresenter.swift; sourceTree = "<group>"; };
+		73B5567922B9C67400B3676C /* SearchAddressWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchAddressWireframe.swift; sourceTree = "<group>"; };
+		73B5567A22B9C67400B3676C /* SearchAddressWireframeInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchAddressWireframeInput.swift; sourceTree = "<group>"; };
+		73B5567C22B9C67400B3676C /* SearchAddressViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchAddressViewInterface.swift; sourceTree = "<group>"; };
+		73B5567E22B9C67400B3676C /* AddressTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressTableViewCell.swift; sourceTree = "<group>"; };
+		73B5567F22B9C67400B3676C /* SearchAddress.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchAddress.storyboard; sourceTree = "<group>"; };
+		73B5568022B9C67400B3676C /* SearchAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchAddressViewController.swift; sourceTree = "<group>"; };
+		82A62C5BFC5570889DD83383 /* Pods-KoreaJusoAPIDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoreaJusoAPIDemo.release.xcconfig"; path = "Target Support Files/Pods-KoreaJusoAPIDemo/Pods-KoreaJusoAPIDemo.release.xcconfig"; sourceTree = "<group>"; };
+		9433F2A9ADB42781B03E7442 /* Pods-KoreaJusoAPIDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoreaJusoAPIDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-KoreaJusoAPIDemoTests/Pods-KoreaJusoAPIDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B6D4C1993B60A0060A5353C6 /* Pods_KoreaJusoAPIDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KoreaJusoAPIDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF5BFA64FAF539E53120A4A1 /* Pods-KoreaJusoAPIDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoreaJusoAPIDemo.debug.xcconfig"; path = "Target Support Files/Pods-KoreaJusoAPIDemo/Pods-KoreaJusoAPIDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0BB87DEA7D087DF2A006388 /* Pods_KoreaJusoAPIDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +91,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C015CA732CD749CD5DFE5BE0 /* Pods_KoreaJusoAPIDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C956933B753A4643058DADF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04BB6AB55D1634A966310869 /* Pods_KoreaJusoAPIDemo.framework */,
+				B6D4C1993B60A0060A5353C6 /* Pods_KoreaJusoAPIDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		73B5563A22B9C65900B3676C = {
 			isa = PBXGroup;
 			children = (
 				73B5564522B9C65900B3676C /* KoreaJusoAPIDemo */,
 				73B5565A22B9C65B00B3676C /* KoreaJusoAPIDemoTests */,
 				73B5564422B9C65900B3676C /* Products */,
+				F70D35D31864082F0CF9117B /* Pods */,
+				1C956933B753A4643058DADF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +130,7 @@
 		73B5564522B9C65900B3676C /* KoreaJusoAPIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				73B5566622B9C67400B3676C /* SearchAddress */,
 				73B5564622B9C65900B3676C /* AppDelegate.swift */,
 				73B5564822B9C65900B3676C /* ViewController.swift */,
 				73B5564A22B9C65900B3676C /* Main.storyboard */,
@@ -96,6 +150,121 @@
 			path = KoreaJusoAPIDemoTests;
 			sourceTree = "<group>";
 		};
+		73B5566622B9C67400B3676C /* SearchAddress */ = {
+			isa = PBXGroup;
+			children = (
+				73B5566722B9C67400B3676C /* Module Interface */,
+				73B5566922B9C67400B3676C /* Application Logic */,
+				73B5567522B9C67400B3676C /* User Interface */,
+			);
+			path = SearchAddress;
+			sourceTree = "<group>";
+		};
+		73B5566722B9C67400B3676C /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				73B5566822B9C67400B3676C /* SearchAddressModuleInterface.swift */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		73B5566922B9C67400B3676C /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				73B5566A22B9C67400B3676C /* Model */,
+				73B5566F22B9C67400B3676C /* Service */,
+				73B5567222B9C67400B3676C /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		73B5566A22B9C67400B3676C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				73B5566B22B9C67400B3676C /* JusoResult.swift */,
+				73B5566C22B9C67400B3676C /* Juso.swift */,
+				73B5566D22B9C67400B3676C /* JusoCommon.swift */,
+				73B5566E22B9C67400B3676C /* JusoContainer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		73B5566F22B9C67400B3676C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				73B5567022B9C67400B3676C /* SearchAddressServiceType.swift */,
+				73B5567122B9C67400B3676C /* SearchAddressService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		73B5567222B9C67400B3676C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				73B5567322B9C67400B3676C /* SearchAddressInteractorIO.swift */,
+				73B5567422B9C67400B3676C /* SearchAddressInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		73B5567522B9C67400B3676C /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				73B5567622B9C67400B3676C /* Presenter */,
+				73B5567822B9C67400B3676C /* Wireframe */,
+				73B5567B22B9C67400B3676C /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		73B5567622B9C67400B3676C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				73B5567722B9C67400B3676C /* SearchAddressPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		73B5567822B9C67400B3676C /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				73B5567922B9C67400B3676C /* SearchAddressWireframe.swift */,
+				73B5567A22B9C67400B3676C /* SearchAddressWireframeInput.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		73B5567B22B9C67400B3676C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				73B5567C22B9C67400B3676C /* SearchAddressViewInterface.swift */,
+				73B5567D22B9C67400B3676C /* Cell */,
+				73B5567F22B9C67400B3676C /* SearchAddress.storyboard */,
+				73B5568022B9C67400B3676C /* SearchAddressViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		73B5567D22B9C67400B3676C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				73B5567E22B9C67400B3676C /* AddressTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F70D35D31864082F0CF9117B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF5BFA64FAF539E53120A4A1 /* Pods-KoreaJusoAPIDemo.debug.xcconfig */,
+				82A62C5BFC5570889DD83383 /* Pods-KoreaJusoAPIDemo.release.xcconfig */,
+				9433F2A9ADB42781B03E7442 /* Pods-KoreaJusoAPIDemoTests.debug.xcconfig */,
+				060429101DA5EA6B6FCD31E8 /* Pods-KoreaJusoAPIDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +272,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73B5566022B9C65B00B3676C /* Build configuration list for PBXNativeTarget "KoreaJusoAPIDemo" */;
 			buildPhases = (
+				F9BE1D55161944E768525AC7 /* [CP] Check Pods Manifest.lock */,
 				73B5563F22B9C65900B3676C /* Sources */,
 				73B5564022B9C65900B3676C /* Frameworks */,
 				73B5564122B9C65900B3676C /* Resources */,
+				B1F6810E06AD5FEF04CF6DE7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +291,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73B5566322B9C65B00B3676C /* Build configuration list for PBXNativeTarget "KoreaJusoAPIDemoTests" */;
 			buildPhases = (
+				B86E3F6B58A0F077F2F88880 /* [CP] Check Pods Manifest.lock */,
 				73B5565322B9C65B00B3676C /* Sources */,
 				73B5565422B9C65B00B3676C /* Frameworks */,
 				73B5565522B9C65B00B3676C /* Resources */,
@@ -180,6 +352,7 @@
 				73B5565122B9C65B00B3676C /* LaunchScreen.storyboard in Resources */,
 				73B5564E22B9C65B00B3676C /* Assets.xcassets in Resources */,
 				73B5564C22B9C65900B3676C /* Main.storyboard in Resources */,
+				73B5568F22B9C67400B3676C /* SearchAddress.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,13 +365,101 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B1F6810E06AD5FEF04CF6DE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KoreaJusoAPIDemo/Pods-KoreaJusoAPIDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KoreaJusoAPIDemo/Pods-KoreaJusoAPIDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B86E3F6B58A0F077F2F88880 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KoreaJusoAPIDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9BE1D55161944E768525AC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KoreaJusoAPIDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		73B5563F22B9C65900B3676C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73B5568622B9C67400B3676C /* SearchAddressServiceType.swift in Sources */,
+				73B5568822B9C67400B3676C /* SearchAddressInteractorIO.swift in Sources */,
 				73B5564922B9C65900B3676C /* ViewController.swift in Sources */,
 				73B5564722B9C65900B3676C /* AppDelegate.swift in Sources */,
+				73B5568122B9C67400B3676C /* SearchAddressModuleInterface.swift in Sources */,
+				73B5569022B9C67400B3676C /* SearchAddressViewController.swift in Sources */,
+				73B5568722B9C67400B3676C /* SearchAddressService.swift in Sources */,
+				73B5568B22B9C67400B3676C /* SearchAddressWireframe.swift in Sources */,
+				73B5568422B9C67400B3676C /* JusoCommon.swift in Sources */,
+				73B5568322B9C67400B3676C /* Juso.swift in Sources */,
+				73B5568922B9C67400B3676C /* SearchAddressInteractor.swift in Sources */,
+				73B5568D22B9C67400B3676C /* SearchAddressViewInterface.swift in Sources */,
+				73B5568C22B9C67400B3676C /* SearchAddressWireframeInput.swift in Sources */,
+				73B5568222B9C67400B3676C /* JusoResult.swift in Sources */,
+				73B5568522B9C67400B3676C /* JusoContainer.swift in Sources */,
+				73B5568E22B9C67400B3676C /* AddressTableViewCell.swift in Sources */,
+				73B5568A22B9C67400B3676C /* SearchAddressPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +619,7 @@
 		};
 		73B5566122B9C65B00B3676C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF5BFA64FAF539E53120A4A1 /* Pods-KoreaJusoAPIDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,6 +638,7 @@
 		};
 		73B5566222B9C65B00B3676C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82A62C5BFC5570889DD83383 /* Pods-KoreaJusoAPIDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,6 +657,7 @@
 		};
 		73B5566422B9C65B00B3676C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9433F2A9ADB42781B03E7442 /* Pods-KoreaJusoAPIDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -415,6 +679,7 @@
 		};
 		73B5566522B9C65B00B3676C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 060429101DA5EA6B6FCD31E8 /* Pods-KoreaJusoAPIDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

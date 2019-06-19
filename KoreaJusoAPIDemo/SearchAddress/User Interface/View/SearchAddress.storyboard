@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gES-vz-dTt">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoDisplay-Bold.otf">
+            <string>SanFranciscoDisplay-Bold</string>
+        </array>
+        <array key="SanFranciscoDisplay-Medium.otf">
+            <string>SanFranciscoDisplay-Medium</string>
+        </array>
+        <array key="SanFranciscoDisplay-Regular.otf">
+            <string>SanFranciscoDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--SearchAddress-->
+        <scene sceneID="R60-Pu-Hpy">
+            <objects>
+                <viewController storyboardIdentifier="SearchAddressViewController" title="SearchAddress" id="HSb-ou-7T5" customClass="SearchAddressViewController" customModule="KoreaJusoAPIDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Uc-9s-KgO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="325, Jong-ro" translatesAutoresizingMaskIntoConstraints="NO" id="srg-Eo-3iS">
+                                <rect key="frame" x="0.0" y="64" width="375" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="HEa-hO-dvK"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="search"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CE7-OJ-k58">
+                                <rect key="frame" x="0.0" y="119" width="375" height="548"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="eIX-q7-Vh8">
+                                    <rect key="frame" x="0.0" y="138" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No results were found for your search." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVx-wW-tj2">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="nVx-wW-tj2" firstAttribute="leading" secondItem="eIX-q7-Vh8" secondAttribute="leading" id="7uK-gH-i4f"/>
+                                        <constraint firstAttribute="trailing" secondItem="nVx-wW-tj2" secondAttribute="trailing" id="BDg-Il-EZt"/>
+                                        <constraint firstAttribute="bottom" secondItem="nVx-wW-tj2" secondAttribute="bottom" id="T4G-Kk-bdD"/>
+                                        <constraint firstItem="nVx-wW-tj2" firstAttribute="top" secondItem="eIX-q7-Vh8" secondAttribute="top" id="kXm-5j-zas"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AddressTableViewCell" rowHeight="110" id="tOu-da-2S2" customClass="AddressTableViewCell" customModule="KoreaJusoAPIDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tOu-da-2S2" id="R3e-YX-11k">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="109.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="tkK-Ir-mKq">
+                                                    <rect key="frame" x="15" y="11" width="345" height="88"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2N-xX-3rL">
+                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="17"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="zipcode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFg-ce-pj7">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="17"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="60" id="7T4-Wv-zFG"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Bold" family="San Francisco Display" pointSize="14"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rt-Kl-NAa">
+                                                                    <rect key="frame" x="60" y="0.0" width="10" height="17"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="10" id="WA4-Tj-RZX"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="zipCode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJV-7F-wGm">
+                                                                    <rect key="frame" x="60" y="0.0" width="285" height="17"/>
+                                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="14"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DMC-AR-boc">
+                                                            <rect key="frame" x="0.0" y="24" width="345" height="16.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="road" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9Z-6Q-4ah" userLabel="road address: ">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="16.5"/>
+                                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Bold" family="San Francisco Display" pointSize="14"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uig-jK-JON">
+                                                                    <rect key="frame" x="60" y="0.0" width="10" height="16.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="10" id="GX2-GU-rYL"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="road-address" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ar-tV-k9S">
+                                                                    <rect key="frame" x="60" y="0.0" width="285" height="16.5"/>
+                                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="14"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EdU-zd-j6L">
+                                                            <rect key="frame" x="0.0" y="47.5" width="345" height="17"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="jibun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pjj-3Z-vvE" userLabel="road address: ">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="17"/>
+                                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Bold" family="San Francisco Display" pointSize="14"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1CA-Tw-puy">
+                                                                    <rect key="frame" x="60" y="0.0" width="10" height="17"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="10" id="S1y-DY-DA7"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jibun-address" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUn-Wc-ROC">
+                                                                    <rect key="frame" x="60" y="0.0" width="285" height="17"/>
+                                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="14"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nhv-bd-JR8">
+                                                            <rect key="frame" x="0.0" y="71.5" width="345" height="16.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="kor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h06-Um-7Eu" userLabel="road address: ">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="16.5"/>
+                                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Bold" family="San Francisco Display" pointSize="14"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="liG-qH-IBX">
+                                                                    <rect key="frame" x="60" y="0.0" width="10" height="16.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="10" id="IKR-eT-i7O"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kor-address" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyi-y6-RZw">
+                                                                    <rect key="frame" x="60" y="0.0" width="285" height="16.5"/>
+                                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="14"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="DMC-AR-boc" firstAttribute="width" secondItem="tkK-Ir-mKq" secondAttribute="width" id="2uy-aa-BIq"/>
+                                                        <constraint firstItem="Pjj-3Z-vvE" firstAttribute="width" secondItem="h06-Um-7Eu" secondAttribute="width" id="4bI-Cr-3xp"/>
+                                                        <constraint firstItem="EdU-zd-j6L" firstAttribute="width" secondItem="tkK-Ir-mKq" secondAttribute="width" id="A3i-WJ-DcD"/>
+                                                        <constraint firstItem="J9Z-6Q-4ah" firstAttribute="width" secondItem="QFg-ce-pj7" secondAttribute="width" id="E0V-Kf-gf4"/>
+                                                        <constraint firstItem="Pjj-3Z-vvE" firstAttribute="width" secondItem="QFg-ce-pj7" secondAttribute="width" id="WJG-nf-5hG"/>
+                                                        <constraint firstItem="EdU-zd-j6L" firstAttribute="width" secondItem="nhv-bd-JR8" secondAttribute="width" id="bwd-G2-lbE"/>
+                                                        <constraint firstItem="i2N-xX-3rL" firstAttribute="width" secondItem="tkK-Ir-mKq" secondAttribute="width" id="rWu-oB-W1t"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="tkK-Ir-mKq" secondAttribute="trailing" id="7bn-Wm-IMG"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="tkK-Ir-mKq" secondAttribute="bottom" id="eTV-fB-Cd2"/>
+                                                <constraint firstItem="tkK-Ir-mKq" firstAttribute="top" secondItem="R3e-YX-11k" secondAttribute="topMargin" id="imG-gT-loD"/>
+                                                <constraint firstItem="tkK-Ir-mKq" firstAttribute="leading" secondItem="R3e-YX-11k" secondAttribute="leadingMargin" id="mvH-ql-BfY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="jibunAddressLabel" destination="RUn-Wc-ROC" id="9dd-E7-JH6"/>
+                                            <outlet property="korAddressLabel" destination="kyi-y6-RZw" id="WRn-SI-Qmr"/>
+                                            <outlet property="roadAddressLabel" destination="6ar-tV-k9S" id="fNj-HB-TeU"/>
+                                            <outlet property="zipCodeLabel" destination="oJV-7F-wGm" id="BeL-b1-KbK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="srg-Eo-3iS" firstAttribute="leading" secondItem="QNV-33-6tv" secondAttribute="leading" id="9LP-7A-yQF"/>
+                            <constraint firstItem="QNV-33-6tv" firstAttribute="bottom" secondItem="CE7-OJ-k58" secondAttribute="bottom" id="CaO-LR-pTB"/>
+                            <constraint firstItem="CE7-OJ-k58" firstAttribute="leading" secondItem="QNV-33-6tv" secondAttribute="leading" id="Ev2-Ny-LjR"/>
+                            <constraint firstItem="QNV-33-6tv" firstAttribute="trailing" secondItem="CE7-OJ-k58" secondAttribute="trailing" id="GBW-k2-4oc"/>
+                            <constraint firstItem="srg-Eo-3iS" firstAttribute="width" secondItem="9Uc-9s-KgO" secondAttribute="width" id="RGy-So-Dm8"/>
+                            <constraint firstItem="QNV-33-6tv" firstAttribute="trailing" secondItem="srg-Eo-3iS" secondAttribute="trailing" id="dq7-dm-CmT"/>
+                            <constraint firstItem="CE7-OJ-k58" firstAttribute="top" secondItem="srg-Eo-3iS" secondAttribute="bottom" id="wFA-Tv-Xki"/>
+                            <constraint firstItem="srg-Eo-3iS" firstAttribute="top" secondItem="QNV-33-6tv" secondAttribute="top" id="yAL-io-70U"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QNV-33-6tv"/>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="2G3-6o-8Go">
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="DCw-Jc-lJY">
+                            <color key="tintColor" red="0.92941176469999998" green="0.1058823529" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="touchCloseButton:" destination="HSb-ou-7T5" id="hth-vh-Dun"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="noResultLabel" destination="nVx-wW-tj2" id="fzr-FP-DzX"/>
+                        <outlet property="searchBar" destination="srg-Eo-3iS" id="F9O-aG-zQe"/>
+                        <outlet property="tableView" destination="CE7-OJ-k58" id="auA-QE-CMh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8je-5K-XuW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847.20000000000005" y="232.53373313343329"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4ih-Qb-cmh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gES-vz-dTt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kC7-i8-57v">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HSb-ou-7T5" kind="relationship" relationship="rootViewController" id="XYX-XR-8Pw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r9S-vb-QxN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-92" y="232.53373313343329"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.78177064659999995" green="0.55228364470000002" blue="0.018981300289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>

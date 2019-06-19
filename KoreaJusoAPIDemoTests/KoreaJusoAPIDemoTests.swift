@@ -10,25 +10,30 @@ import XCTest
 @testable import KoreaJusoAPIDemo
 
 class KoreaJusoAPIDemoTests: XCTestCase {
-
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+  func testAPI() {
+    let service = SearchAddressService()
+    let expt = expectation(description: "TestAPI")
+    
+    service.fetchAddress(
+      pageIndex: 0,
+      interval: 10,
+      keyword: "Jong-ro",
+      success: {
+        guard let count = $0?.juso?.count else {
+          XCTAssert(false, "There are no address")
+          expt.fulfill()
+          return
         }
-    }
-
+        XCTAssert(count == 10)
+        expt.fulfill()
+      },
+      failure: {
+        XCTAssert(false, $0.localizedDescription)
+        expt.fulfill()
+      }
+    )
+    
+    wait(for: [expt], timeout: 2.0)
+  }
+  
 }
