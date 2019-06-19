@@ -4,9 +4,9 @@ Search Korea Address using Ministry of the Interior and Safety's Address Open AP
 (행정안전부의 주소 OpenAPI를 사용한 영문주소 검색데모 입니다.)
 
 
-```SearchAddress``` Modules was made use ```VIPER``` Architecture.
+```SearchAddress``` Modules was made use [```VIPER```](https://github.com/devikkim/ViperSample) Architecture.
 
-(```SearchAddress``` 모듈은 ```VIPER``` 아키텍쳐를 사용하여 만들어졌습니다.)
+(```SearchAddress``` 모듈은 [```VIPER```](https://github.com/devikkim/ViperSample) 아키텍쳐를 사용하여 만들어졌습니다.)
 
 ## What you need
 
